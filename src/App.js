@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LogInComponent from "./auth/logInComponent";
 import CreateActivity from "./activity/createActivity";
 import logo from "./logo.svg";
+import Avatar from 'avataaars'
 import "./App.css";
 
 class App extends Component {
@@ -20,7 +21,23 @@ class App extends Component {
           }}
         >
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+            {/*<img src={logo} className="App-logo" alt="logo" />*/}
+              <div>
+                  <Avatar
+                      style={{width: '100px', height: '100px'}}
+                      avatarStyle='Transparent'
+                      topType='Hat'
+                      accessoriesType='Blank'
+                      facialHairType='BeardMedium'
+                      facialHairColor='Black'
+                      clotheType='Hoodie'
+                      clotheColor='Red'
+                      eyeType='Wink'
+                      eyebrowType='UpDown'
+                      mouthType='Twinkle'
+                      skinColor='Pale'
+                  />
+              </div>
             <h1 className="App-title">Welcome to Nod</h1>
           </header>
         </div>
